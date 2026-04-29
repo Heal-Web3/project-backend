@@ -1,0 +1,38 @@
+# ── Dependencies ──────────────────────────────────────────────────────────────
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# ── Next.js build output ──────────────────────────────────────────────────────
+/.next/
+/out/
+
+# ── Production build ──────────────────────────────────────────────────────────
+/build
+
+# ── Environment variables — NEVER commit these ────────────────────────────────
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env*.local
+
+# ── Vercel ────────────────────────────────────────────────────────────────────
+.vercel
+
+# ── TypeScript ────────────────────────────────────────────────────────────────
+*.tsbuildinfo
+next-env.d.ts
+
+# ── OS / Editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo

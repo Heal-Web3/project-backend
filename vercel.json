@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "functions": {
+    "src/app/api/fraud-check/route.ts": {
+      "maxDuration": 30
+    },
+    "src/app/api/analytics/route.ts": {
+      "maxDuration": 30
+    },
+    "src/app/api/fraud-check/[id]/route.ts": {
+      "maxDuration": 15
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ]
+}
