@@ -1,5 +1,5 @@
 import { Ratelimit } from "@upstash/ratelimit";
-import { Redis } from "@upstash/redis";
+import { Redis } from "@upstash/redis/cloudflare";
 
 // Lazy initialization — avoids crashing at module load if env vars are missing.
 // Redis.fromEnv() throws immediately if UPSTASH_REDIS_REST_URL is not set,
