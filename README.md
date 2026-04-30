@@ -1,5 +1,4 @@
-supabasepas
-AIzaSyCwZ6AOIpBpWEMq1vOompI8rtjtjaV1OMs
+
 
 # Heal Backend — Blockchain Prescription Fraud Prevention System
 
